@@ -6,6 +6,7 @@
   --dark-background: #2f303a;
   --light-background: #f5f4fa;
   --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --social-link-color: #afb1b8;
 }
 
 body {
@@ -232,9 +233,6 @@ header {
   background: var(--light-background);
 }
 
-.advantages-icon {
-}
-
 .advantages-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -303,11 +301,73 @@ header {
 
 .team-list .profession {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.name-social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--social-link-color);
+}
+
+.social-link-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent);
+  color: var(--main-white-color);
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.clients-list {
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+}
+
+.clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--social-link-color);
+}
+
+.clients-name:hover,
+.clients-name:focus {
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 /* Footer */
