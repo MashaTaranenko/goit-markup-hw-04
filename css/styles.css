@@ -501,9 +501,11 @@ button {
   background: #ffffff;
 }
 
-.examples-item:hover,
-.examples-item:focus {
+.examples-item > a:hover,
+.examples-item > a:focus {
+  display: block;
   box-shadow: var(--btn-shadow);
+  outline: none;
 }
 
 .examples-box {
